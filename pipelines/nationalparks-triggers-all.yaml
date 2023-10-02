@@ -21,7 +21,7 @@ spec:
       spec:
         params:
           - name: APP_NAME
-            value: nationalparks
+            value: nationalparks-py
           - name: GIT_REPO
             value: $(tt.params.git-repo-url)
           - name: GIT_REVISION
@@ -31,7 +31,7 @@ spec:
         workspaces:
         - name: workspace
           persistentVolumeClaim:
-            claimName: app-source-pvc
+            claimName: app-source-pvc-py
 ---
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
